@@ -38,18 +38,27 @@ p {
 
 .nav-link {
 	display: flex;
-	padding: 12px;
-	margin-left: 40px;
+	padding: 6px 10px;
+	margin-right: 40px;
 	transition: 0.3s ease;
 	color: #fff;
 	text-decoration: none;
 	border-radius: 6px;
+	border: 2px solid #383737;
 }
 
 .nav-link:hover {
 	font-weight: bold;
-	background-color: #FF4500;
+	background-color: #CD5824;
+	border: 2px solid #fff;
+	box-shadow: 3px 3px 3px #909090;
 }
+
+
+.push {
+	margin-left: auto;
+}
+
 
 .zoom-avatar-container {
 	position: relative;
