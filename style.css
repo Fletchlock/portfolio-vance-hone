@@ -39,7 +39,7 @@ p {
 .nav-link {
 	display: flex;
 	padding: 6px 10px;
-	margin-right: 40px;
+	margin-right: 20px;
 	transition: 0.3s ease;
 	color: #fff;
 	text-decoration: none;
@@ -89,7 +89,7 @@ p {
 	text-decoration: none;
 	color: #fff;
 	margin-left: 1em;
-	font-size: 1.4em;
+	font-size: 1.3em;
 }
 
 .logoname:hover {
