@@ -71,7 +71,7 @@ p {
 	border-radius: 50%;
 	display: block;
 	align-self: center;
-	transition: all 0.3s ease-in-out;
+	transition: all .4s ease-out;
 }
 
 .avatar {
@@ -93,7 +93,7 @@ p {
 }
 
 .logoname:hover {
-/* 	font-weight: bold; */
+	text-shadow: 2px 2px 3px #909090;
 }
 
 .myStory {
