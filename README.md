@@ -4,4 +4,4 @@ My portfolio landing page - WIP
 https://fletchlock.github.io/portfolio-vance-hone/
 
 Using HTML and CSS for now.
-Plan to incorporate JS in future updates
+Added basic JS functionality as I learn.
