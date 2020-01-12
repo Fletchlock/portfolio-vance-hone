@@ -13,22 +13,59 @@ body {
 	background-image: linear-gradient(180deg, rgba(255,255,255,1) 5%, rgba(222,220,220,.8) 50%, rgba(255,255,255,1) 95%);
 }
 
-nav {
+.main-nav {
+ 	display: flex;
+  	list-style: none;
+}
+  
+.nav {
 	display: flex;
-	background-color: #383737;
+ 	background-color: #383737;
 	color: #fff;
 	align-items: center;
 	box-sizing: border-box;
 	padding: 5px;
 }
 
-@media only screen and (max-width: 500px) {
+.nav label, #hamburger {
+	display: none;
+}
+
+@media only screen and (max-width: 600px) {
 	body, nav {
 		font-size: .9em;
 	}
 	.zoom-avatar-container .avatar {
 		width: 40px;
 		height: 40px;
+	}
+	.nav label {
+		display: flex;
+	}
+	.main-nav {
+		flex-flow: column;
+		align-items: flex-end;
+		padding-right: 10px;
+	}
+	.nav-link {
+	display: flex;
+	}
+	.logoname {
+		display: flex;
+		align-self: flex-start;
+		padding-top: 8px;
+		margin: 0;
+	}
+	.zoom-avatar-container {
+		display: flex;
+		align-self: flex-start;
+	}
+	.nav li {
+		display: none;
+	}
+	input:checked ~ li {
+		display: flex;
+		padding: 2px;
 	}
 }
 
@@ -37,7 +74,6 @@ p {
 }
 
 .nav-link {
-	display: flex;
 	padding: 6px 10px;
 	margin-right: 20px;
 	transition: 0.3s ease;
@@ -54,12 +90,6 @@ p {
 	box-shadow: 3px 3px 3px #909090;
 }
 
-
-.push {
-	margin-left: auto;
-}
-
-
 .zoom-avatar-container {
 	position: relative;
 	overflow: hidden;
@@ -68,7 +98,6 @@ p {
 }
 
 .zoom-avatar-container img {
-	border-radius: 50%;
 	display: block;
 	align-self: center;
 	transition: all .4s ease-out;
@@ -89,7 +118,9 @@ p {
 	text-decoration: none;
 	color: #fff;
 	margin-left: 1em;
+	margin-right: auto;
 	font-size: 1.3em;
+	transition: 0.3s ease;
 }
 
 .logoname:hover {
@@ -113,7 +144,7 @@ p {
 	100% { opacity: 1; }
 }
 
-ul {
+/*ul {
 	list-style: none;
 }
 
@@ -124,4 +155,4 @@ ul li::before {
 	display: inline-block;
 	width: 1em;
 }
-
+*/
