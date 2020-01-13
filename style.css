@@ -17,6 +17,11 @@ body {
  	display: flex;
   	list-style: none;
 }
+
+#navStick {
+	position: sticky;
+	top: 0;
+}
   
 .nav {
 	display: flex;
